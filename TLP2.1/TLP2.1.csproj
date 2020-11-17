@@ -33,8 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,25 +47,30 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CommandEnum.cs" />
-    <Compile Include="CommandsStruct.cs" />
-    <Compile Include="CommandsTypeEnum.cs" />
-    <Compile Include="Compilator.cs" />
-    <Compile Include="ExecutController.cs" />
+    <Compile Include="CompilateFile\CommandEnum.cs" />
+    <Compile Include="CompilateFile\CommandsStruct.cs" />
+    <Compile Include="CompilateFile\CommandsTypeEnum.cs" />
+    <Compile Include="CompilateFile\Compilator.cs" />
+    <Compile Include="ExecuteFile\ExecutController.cs" />
+    <Compile Include="FileManager.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="IExecutor.cs" />
-    <Compile Include="MyExecutor.cs" />
-    <Compile Include="MyLanguage.cs" />
-    <Compile Include="Operation.cs" />
+    <Compile Include="ExecuteFile\IExecutor.cs" />
+    <Compile Include="ExecuteFile\MyExecutor.cs" />
+    <Compile Include="CompilateFile\MyLanguage.cs" />
+    <Compile Include="ExecuteFile\Operation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -85,6 +93,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Task.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

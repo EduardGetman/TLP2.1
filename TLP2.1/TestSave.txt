@@ -1,0 +1,10 @@
+MOV A 2;
+MOV C 5;
+MOV Z 8
+MOV X 4
+
+JNZ Z C;
+ADD A A;
+SUB C 1;
+JMP X;
+STOP;

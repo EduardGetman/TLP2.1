@@ -2,19 +2,14 @@
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
   <Class Name="TLP2.MyExecutor">
     <Position X="1" Y="0.75" Width="2" />
-    <AssociationLine Name="operationList" Type="TLP2.Operation" FixedFromPoint="true">
-      <Path>
-        <Point X="2.85" Y="5.257" />
-        <Point X="2.85" Y="6.763" />
-        <Point X="3.5" Y="6.763" />
-      </Path>
+    <AssociationLine Name="operationList" Type="TLP2.Operation">
       <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
-        <Position X="0.808" Y="0.763" Height="0.182" Width="2.145" />
+        <Position X="1.204" Y="0.023" Height="0.182" Width="2.145" />
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>CAAAAAAAACAggIAAAAAAACAAAA1pAAgAAQAAIAAAAAA=</HashCode>
-      <FileName>MyExecutor.cs</FileName>
+      <HashCode>CAAAAAAAACAggIAAAAAAACAAAA1pAAkAAQAAIAAAAAA=</HashCode>
+      <FileName>ExecuteFile\MyExecutor.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
       <Field Name="operationList" />
@@ -29,8 +24,8 @@
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAEAAAAAAgAAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Compilator.cs</FileName>
+      <HashCode>AAAAAAAEAAAAAAgIAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CompilateFile\Compilator.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Field Name="language" />
@@ -44,8 +39,8 @@
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAACAAAAAAAAAAAAAAEAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ExecutController.cs</FileName>
+      <HashCode>AAAACAAAAAAAAAAAAAAUAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExecuteFile\ExecutController.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Field Name="executor" />
@@ -55,7 +50,7 @@
     <Position X="3.5" Y="5.75" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAIAAQCCAAAAAAAAAAAABAAAAAQAAAABAAAAAAAAAgA=</HashCode>
-      <FileName>Operation.cs</FileName>
+      <FileName>ExecuteFile\Operation.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Command" />
@@ -63,16 +58,9 @@
   </Class>
   <Class Name="TLP2.MyLanguage">
     <Position X="7.25" Y="6.25" Width="3.25" />
-    <AssociationLine Name="CommandsStructs" Type="TLP2.CommandsStruct" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="8.75" Y="9.411" />
-        <Point X="8.75" Y="9.937" />
-        <Point X="7" Y="9.937" />
-      </Path>
-    </AssociationLine>
     <TypeIdentifier>
       <HashCode>EAAAABAAAAgAAAAAAEAAAABAAAIAAAAAAAAAAAAAgAA=</HashCode>
-      <FileName>MyLanguage.cs</FileName>
+      <FileName>CompilateFile\MyLanguage.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="CommandsStructs" />
@@ -82,32 +70,32 @@
     <Position X="4.5" Y="9.5" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAEAAAABAAAAAAAIAAAACAAAAAAAAIAAAACAAAAAAAA=</HashCode>
-      <FileName>CommandsStruct.cs</FileName>
+      <FileName>CompilateFile\CommandsStruct.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="TypeEnum" />
       <Property Name="CommandEnum" />
+      <Property Name="TypeEnum" />
     </ShowAsAssociation>
   </Struct>
   <Interface Name="TLP2.IExecutor">
     <Position X="4.25" Y="2.5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAgAAAAAAAAACAAAAABAAgAAAAAAAAAAAA=</HashCode>
-      <FileName>IExecutor.cs</FileName>
+      <FileName>ExecuteFile\IExecutor.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Enum Name="TLP2.CommandsEnum">
     <Position X="0.75" Y="6.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>KAAAAAAAAKQAgIAAAACAAAAAAAlIAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>CommandEnum.cs</FileName>
+      <FileName>CompilateFile\CommandEnum.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="TLP2.CommandsTypeEnum">
     <Position X="0.75" Y="9.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAgAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAIAAAAAA=</HashCode>
-      <FileName>CommandsTypeEnum.cs</FileName>
+      <FileName>CompilateFile\CommandsTypeEnum.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Font Name="Segoe UI" Size="9" />

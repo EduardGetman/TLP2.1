@@ -23,14 +23,7 @@ namespace TLP2
                     return true;
             return false;
         }
-        public bool IsLetter(string letter) 
-        {
-            if (letter.Length == 1)
-                return letter[0] > 64 && letter[0] < 91;
-            else
-                return false;
 
-        }
         public CommandsStruct WordToCommandsStruct(string word) 
         {
             for (int i = 0; i < commandsStructs.Length; i++)
